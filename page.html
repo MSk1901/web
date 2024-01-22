@@ -267,8 +267,8 @@
         </header>
 
         <main class="row">
-            <div class="row text-center">
-                <div class="col-4">
+            <div class="row">
+                <div class="col-4 text-center">
                     <div class="card mb-4 rounded-3 shadow-sm">
                         <div class="card-header py-3">
                             <h4 class="my-0 fw-normal">Товар 1</h4>
@@ -281,10 +281,131 @@
                                 Email support,
                                 Help center access
                             </p>
-                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button>
+                            <button type="button" class="w-100 btn btn-lg btn-success">Купить</button>
                         </div>
                     </div>
                 </div>
+                <div class="col-4">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputText1" class="form-label">Имя</label>
+                            <input type="text" class="form-control" id="exampleInputText1"
+                                   aria-describedby="emailHelp" placeholder="Иван">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                   placeholder="example@mail.com">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="page-header mt-4 mb-4">FAQ</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="d-inline-flex gap-1">
+                        <button class="btn btn-light" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Как купить?
+                        </button>
+                        <button class="btn btn-light" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample1" aria-expanded="false"
+                                aria-controls="collapseExample">
+                            Как доставить?
+                        </button>
+                        <button class="btn btn-light" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample2" aria-expanded="false"
+                                aria-controls="collapseExample">
+                            Какая гарантия?
+                        </button>
+
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            Выберите понравившийся товар и нажмите на кнопку "Купить".
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapseExample1">
+                        <div class="card card-body">
+                            Мы доставляем товары по всей России до пунктов выдачи или курьером.
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                            На всю продукцию распространяется гарантия - 1 год.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <table class="table mt-4">
+                        <thead>
+                        <tr>
+                            <th scope="col">Номер</th>
+                            <th scope="col">Название товара</th>
+                            <th scope="col">Цена за штуку</th>
+                            <th scope="col">Кол-во</th>
+                            <th scope="col">Итоговая сумма</th>
+                            <th scope="col">Статус заказа</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        <tr>
+
+                            <th scope="row">1</th>
+                            <td>Товар 1</td>
+                            <td>$100</td>
+                            <td>2</td>
+                            <td>$200</td>
+                            <td>
+                                <div class="alert alert-primary mb-0" role="alert">Новый</div>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Товар 2</td>
+                            <td>$50</td>
+                            <td>1</td>
+                            <td>$50</td>
+                            <td>
+                                <div class="alert alert-warning mb-0" role="alert">Обработка</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Товар 3</td>
+                            <td>$1</td>
+                            <td>100</td>
+                            <td>$100</td>
+                            <td>
+                                <div class="alert alert-success mb-0" role="alert">Обработан</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Товар 4</td>
+                            <td>$75</td>
+                            <td>2</td>
+                            <td>$150</td>
+                            <td>
+                                <div class="alert alert-danger mb-0" role="alert">Отмена</div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
             </div>
         </main>
 
